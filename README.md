@@ -1,5 +1,40 @@
 # Yolov5
 
+## colab
+
+필수 드라이브 마운트
+```
+from  google.colab import drive
+drive.mount('/content/drive')
+```
+1. roboflow에서 데이터를 가져온다.
+2. ``` git clone https://github.com/ultralytics/yolov5```
+3. ``` pip install -r requirements.txt```
+4. yolov5 폴더로 이동 후 ```python train.py --img 416 --batch 80 --epochs 100 --data './data.yaml' --cfg ./models/yolov5s.yaml --weights ./yolov5s.pt ```실행
+5. ```python detect.py --weights ./runs/train/exp/weights/best.pt --img 416 --conf 0.4 --source ./test/images```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 anaconda 설치
 anaconda promopt에서
 
